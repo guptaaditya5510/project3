@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <script>
+        function pass(){
+            x=document.getElementById("a").value
+            y=x.length
+            if(y<8){
+                   document.getElementById("b").innerHTML="TOO SHORT"
+            }
+            else if(y>=8 && y<=16){
+                   document.getElementById("b").innerHTML="STRONG"
+            }
+            else{
+                   document.getElementById("b").innerHTML="VERY STRONG"
+            }
+        }
+    </script>
+    <style>
+        h1{
+            margin-left: 850px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 35px;
+        }
+        #a1{
+            margin-left: 850px;
+            margin-top: 100px;
+            font-size: 25px;
+            font-family: cursive;
+        }
+        #c{
+            margin-left: 850px;
+            font-size: 25px;
+            font-family: cursive;
+        }
+        .b1{
+            margin-left: 700px;
+            width: 400px;
+            height: 25px;
+            border-radius: 18px;
+        }
+        #a{
+            margin-left: 700px;       
+            width: 400px;
+            height: 25px;
+            border-radius: 18px;
+        }
+        button{
+            height: 25px;
+            width: 100px;
+            margin-left: 850px;
+            border-radius: 10px;
+        }
+        #be{
+            width: 100%;
+            margin-top: 90px;
+            height: 400px;
+        }
+        body{
+           background-image: url("./pix.jpg");
+           background-size: cover;
+        }
+        
+       h2{
+           margin-left: 800px;
+       }
+       a{
+           text-decoration: none;
+       }
+    </style>
+</head>
+<body>
+    <h1><b><u>LOG IN</u></b></h1>
+    <p id="a1">EMAIL: <i class="fa fa-envelope" style="font-size:40px; margin-left: 10px;"></i></p><br>
+    <input type="email" class="b1">
+    <br>
+    <p id="c">PASSWORD: <i class="fa fa-key" style="font-size:40px; margin-left: 10px;"></i></p><br>
+    <input type="password" id="a" onkeypress="pass()">
+    <h2 id="b"></h2>
+    <button><a href="./Quiz1.html">
+        LOG IN</a></button>
+    <div>
+        <img src="./div.jpg" id="be">
+        
+    </div>
+</body>
+</html>

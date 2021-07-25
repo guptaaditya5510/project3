@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+      
+
+
+      var total = 0, final;
+   
+
+        
+
+       function tot(event)
+       {
+           total = 0;
+           var q1=document.quiz.question1.value;
+           var q2=document.quiz.question2.value;
+           var q3=document.quiz.question3.value;
+           var q4=document.quiz.question4.value;
+           var q5=document.quiz.question5.value;
+           var final = document.getElementById("q11")
+           if(q1=='b')
+           {
+               total++;
+            
+           }
+          
+
+
+           if(q2=='a')
+           {
+               total++;
+           }
+           if(q3=='b')
+           {
+               total++;
+           }
+          if(q4=='b')
+          {
+              total++;
+          }
+          if(q5=='a')
+          {
+              total++;
+          }
+           
+           console.log(total);
+           if(total>=2)
+           alert("Your score is " +total);
+           else
+               alert("Sorry");
+           event.preventDefault();
+           document.getElementById("q11").style.display = "none";
+       }
+       console.log(total);
+       function check()
+       {
+           console.log(total)
+           if (total >= 2)
+               window.open("New.html");
+           else
+               alert("Not qualified for next round")
+       }
+
+    </script>
+    
+</head>
+<body>
+    <form name="quiz">
+
+        <div>
+            <p style="margin-top: 50px; padding: 40px; margin-left: 50px; font-size: 22px;"><b>1. Which of the following is not a type of inheritance?</b></p>
+            <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question1" value="a" id="a11"> Double-level</p>
+            <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question1" value="b" id="a12"> Single-level</p>
+            <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question1" value="c" id="a13"> Multi-level</p>
+            <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question1" value="d" id="a14"> Multiple</p>
+        </div>
+
+
+        <div>
+            <p style="margin-top: 50px; padding: 40px; margin-left: 50px; font-size: 22px;"><b>2. What is the full form of HTML?</b></p>
+            <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question2" value="a" id="a21"> Hypertext-Markup Language</p>
+            <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question2" value="b" id="a22"> Hyperextension-Markup Language</p>
+            <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question2" value="c" id="a23"> Hypothetical-Markup Language</p>
+            <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question2" value="d" id="a24"> Hypertension-Markup Language</p>
+        </div>
+
+
+        <div>
+            <p style="margin-top: 50px; padding: 40px; margin-left: 50px; font-size: 22px;"><b>3. Which character is used to indicate an end tag?</b></p>
+            <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question3" value="a" id="a31"> ?</p>
+            <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question3" value="b" id="a32"> /</p>
+            <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question3" value="c" id="a33"> *</p>
+            <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question3" value="d" id="a34"> ^</p>
+        </div>
+
+      
+    
+    
+        <button id="result" style="margin-left: 200px; margin-top: 20px; font-size: 18px; padding: 10px; display: inline;" onclick="tot(event)()">SUBMIT</button>
+    
+    
+    </form>
+    
+    <!-- <button id="new" style="margin-left: 200px; margin-top: 20px; font-size: 18px; padding: 10px; display: inline;" onclick="next()">Next</button> -->
+    
+    
+</body>
+</html>

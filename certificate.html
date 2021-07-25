@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>certificate</title>
+    <script src="./jquery2.min.js"></script>
+    <style>
+        div{
+            background-image:url("./WhatsApp\ Image\ 2021-06-21\ at\ 2.08.47\ PM.jpeg");
+            background-size: 100% 100%;
+            margin-left: 15%;
+            margin-top: 10vh;
+            height: 80vh;
+            width: 70%;
+            border: 2px solid blue;
+            border-radius: 15px;
+            display: none;
+        }
+        h1{
+            margin-top: -1vh;
+            font-size: 50px;
+            margin-left: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h6{
+            margin-top: -3vh;
+            font-size: 15px;
+        }
+        h2{
+            
+            margin-top: 9vh;
+            text-decoration: underline;
+        }
+        h4{
+            margin-top: 60px;
+            font-size: 25px;
+            text-decoration: underline;
+        }
+        h3{
+            margin-left: 60px;
+        }
+        h5{
+            font-size: 20px;
+            margin-left: 30%;
+            text-decoration: underline;
+            margin-top: 50px;
+        }
+        #button{
+            display: none;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+    <script>
+           function date1()
+        {
+            x=new Date()
+            
+            d=x.getDate()
+            m=x.getMonth()
+            y=x.getYear()
+            
+
+            document.getElementById("date").innerHTML="DATE"+":"+d+"/"+m+"/"+y
+      
+            
+        }
+         function name1(){
+            a=prompt("Enter your name")
+            document.getElementById("name").innerHTML=a
+        }
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("button").hide()
+                $("div").show()
+                $("#button").show()
+            })
+        })
+        
+    
+    </script>
+</head>
+<body>
+    <button onclick="name1(),date1()">click to get e-certificate</button>
+    <div>
+       <center> <h2>SAMBHAV</h2>
+           <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">CERTIFICATE</h1>
+           <h6>OF ACHIEVEMENT PRESENTED TO</h6>
+           <h4 id="name">NAME HERE</h4>
+        <p style="font-family: Georgia, 'Times New Roman', Times, serif;"> <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci velit<br> illum asperiores quisquam sequi, consectetur qui soluta dicta aspernatur<br> earum quo odio officiis impedit autem enim, aut consequuntur tempore et.</b></p>
+   
+    </center>
+    <h5 id="date"></h5>
+    <h6></h6>
+    </div>
+    <button id="button"><a href="#" onclick="window.print()" >CLICK HERE HERE TO PRINT</a></button>
+</body>
+</html>

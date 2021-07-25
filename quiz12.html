@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url("./Backround1.jpg");
+            background-size: cover;
+            
+
+        }
+        a{
+            text-decoration: none;
+        }
+        #new{
+            margin-left: 900px;
+            border-radius: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+
+    <script>
+        var total = 0, final;
+        
+
+
+        
+
+        function tot(event)
+        {
+            total = 0;
+            var q1=document.quiz.question1.value;
+            var q2=document.quiz.question2.value;
+            var q3=document.quiz.question3.value;
+            var q4=document.quiz.question4.value;
+            var q5=document.quiz.question5.value;
+            var final = document.getElementById("q11")
+            if(q1=='a')
+            {
+                total++;
+            }
+            if(q2=='a')
+            {
+                total++;
+            }
+            if(q3=='b')
+            {
+                total++;
+            }
+            if(q4=='a'){
+                total++;
+            }
+            if(q5=='b'){
+                total++;
+            }
+            console.log(total);
+            if(total>=2)
+            alert("Your score is " +total);
+            else
+                alert("Sorry");
+            event.preventDefault();
+            document.getElementById("q11").style.display = "none";
+        }
+        console.log(total);
+        function check()
+        {
+            console.log(total)
+            if (total >= 2)
+                window.location.href="./certificate.html";
+            else
+                alert("Not qualified for next round")
+                window.location.href="#"
+        }
+
+
+
+    </script>
+
+
+</head>
+<body>
+
+   
+    
+
+        
+
+        <form name="quiz">
+
+            <div>
+                <p style="margin-top: 50px; padding: 40px; margin-left: 50px; font-size: 26px; font-family: cursive;"><b>1. The Child Labour (Prohibition and Regulation) Act, 1986 is an example of</b></p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question1" value="a" id="a11"> Regulative Labour Legislation</p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question1" value="b" id="a12">  Protective Labour Legislation</p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question1" value="c" id="a13"> Social Security Legislation</p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question1" value="d" id="a14"> Welfare Legislation </p>
+            </div>
+
+
+            <div>
+                <p style="margin-top: 50px; padding: 40px; margin-left: 50px; font-size: 26px;font-family: cursive;"><b>2. Under the Child Labour (Prohibition and Regulation) Act, 1986, a child is one who has not completed his</b></p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question2" value="a" id="a21"> 18 years</p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question2" value="b" id="a22"> 10 years</p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question2" value="c" id="a23"> 20 years</p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question2" value="d" id="a24"> 15 years</p>
+            </div>
+
+
+            <div>
+                <p style="margin-top: 50px; padding: 40px; margin-left: 50px; font-size: 26px;font-family: cursive;"><b>3. In the year 2004-2005 ____ percentage of population was below the poverty line</b></p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question3" value="a" id="a31"> 33</p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question3" value="b" id="a32"> 37.2</p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question3" value="c" id="a33"> 35</p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question3" value="d" id="a34"> 20</p>
+            </div>
+             
+
+            <div>
+                <p style="margin-top: 50px; padding: 40px; margin-left: 50px; font-size: 26px;font-family: cursive;"><b>4. Pradhan Mantri Gramodaya Yojana aims at</b></p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question4" value="a" id="a41">Strengthening the Panchayati Raj system in rural areas</p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question4" value="b" id="a42"> Meeting rural needs like Primary education, health care, drinking water, housing, rural roads </p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question4" value="c" id="a43">Alleviating poverty through micro-enterprises</p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question4" value="d" id="a44">Generating employment in the rural areas</p>
+            </div>
+            
+
+            <div>
+                <p style="margin-top: 50px; padding: 40px; margin-left: 50px; font-size: 26px;font-family: cursive;"><b>5. In April 1999 which programme launched</b></p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question5" value="a" id="a51">SISRY</p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question5" value="b" id="a52">JGSY</p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question5" value="c" id="a53">REGP</p>
+                <p style="padding: 20px; font-size: 22px; margin-left: 50px;"><input type="radio" name="question5" value="d" id="a54">PMRY</p>
+            </div>
+            <button id="result" style="margin-left: 200px; margin-top: 20px; font-size: 18px;width: 150px; background-color: bottom: ;; border-radius: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 10px; display: inline;" onclick="tot(event)">SUBMIT</button>
+
+
+        </form>
+
+        <button id="new" style="margin-left: 1700px; width: 150px;  margin-bottom: 20px; font-size: 18px; padding: 10px; display: inline;" onclick="check()">NEXT</button> -->
+
+        </div>
+
+        <!-- <a href="">
+
+        <button id="new" style="margin-left: 200px; margin-top: 20px; font-size: 18px; padding: 10px; display: inline;" onclick="next()">Next</button></a> -->
+
+    
+    
+</body>
+</html>

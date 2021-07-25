@@ -1,0 +1,162 @@
+body{
+    background-image: linear-gradient(black,black);
+    overflow: hidden;
+}
+/* #b1{
+    height: 10vh;
+} */
+/* #b1:hover .c1{
+    border:3px solid yellow;
+} */
+/* #b2{
+    height: 10vh;
+}
+#b3{
+    height: 10vh;
+} */
+#h11{
+    opacity: 0;
+}
+#h22{
+    opacity: 0;
+}
+#h33{
+    /* margin-top: 5vh; */
+    opacity: 0;
+}
+#h44{
+    /* margin-top: 5vh; */
+    opacity: 0;
+}
+
+#h1{
+    font-size: 50px;
+    color: white;
+    width: 39%;
+    position: absolute;
+    bottom: 40vh;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:900;
+    margin-left: 7%;
+}
+#b2{
+    margin-top: 60vh;
+    position: absolute;
+    margin-left: 7%;
+    background-color: rgb(24, 173, 173);
+}
+#b1{
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.a{
+    margin-left: 50%;
+    height: 100vh;
+    width: 50%;
+    overflow: scroll;
+}
+.r1{
+   margin-top: 10vh;
+    width: 100%;
+ }
+ .c1{
+     background-image: url(./WhatsApp\ Image\ 2021-06-21\ at\ 3.38.18\ PM.jpeg);
+     background-size: cover;
+     /* background-size: 100% 100%; */
+     height: 50vh;
+     width: 35%;
+ }
+ .c1:hover{
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(137, 39, 228);
+    background-image: linear-gradient( rgba(137, 39, 228,0.6 ) 100%,transparent),url(./WhatsApp\ Image\ 2021-06-21\ at\ 3.38.18\ PM.jpeg);
+}
+.c1:hover #h11{
+    color: beige;
+    opacity: 1;
+}
+ .c2{
+    margin-top: 10vh;
+    background-image: url(./WhatsApp\ Image\ 2021-06-21\ at\ 3.38.41\ PM.jpeg);
+    background-size: cover;
+     /* background-color: blueviolet; */
+     height: 50vh;
+     width: 35%;
+ }
+ .c2:hover{
+     border: 2px solid rgb(255, 255, 255);
+     background-image: linear-gradient( rgba(137, 39, 228,0.6 ) 100%,transparent),url(./WhatsApp\ Image\ 2021-06-21\ at\ 3.38.41\ PM.jpeg);
+ }
+ .c2:hover #h22{
+    color: beige;
+    opacity: 1;
+}
+ .c3{
+    margin-top: 10vh;
+    background-color: blueviolet;
+    height: 50vh;
+    width: 35%;
+}
+.c3:hover{
+    border: 2px solid rgb(255, 255, 255);
+    background-image: linear-gradient( rgba(255, 255, 255, 0.3) 100%,transparent);
+}
+ .r2{
+   margin-top: -109vh;
+   margin-left: 55%;
+    width: 100%;
+    margin-bottom: 10vh;
+ }
+ .c4{
+    margin-top: 10vh;
+     /* background-color: blueviolet; */
+     background-image: url(./WhatsApp\ Image\ 2021-06-21\ at\ 3.38.26\ PM.jpeg);
+     background-size: cover;
+     height: 50vh;
+     width: 35%;
+ }
+ .c4:hover{
+    border: 2px solid rgb(255, 255, 255);
+    background-image: linear-gradient( rgba(137, 39, 228,0.6 ) 100%,transparent),url(./WhatsApp\ Image\ 2021-06-21\ at\ 3.38.26\ PM.jpeg);
+}
+.c4:hover #h33{
+    color: beige;
+    opacity: 1;
+}
+ .c5{
+     margin-top: 10vh;
+     /* background-color: blueviolet; */
+     background-image: url(./WhatsApp\ Image\ 2021-06-21\ at\ 3.46.35\ PM.jpeg);
+     background-size: cover;
+     height: 50vh;
+     width: 35%;
+ }
+ .c5:hover{
+    border: 2px solid rgb(255, 255, 255);
+    background-image: linear-gradient( rgba(137, 39, 228,0.6 ) 100%,transparent),url(./WhatsApp\ Image\ 2021-06-21\ at\ 3.46.35\ PM.jpeg);
+}
+.c5:hover #h44{
+    color: beige;
+    opacity: 1;
+}
+ /* #p1{
+     margin-top: 50px;
+ } */
+ /* #c{
+    margin-bottom: -30px;
+    color: black;
+ }
+ #d{
+     margin-top: -15vh;
+ }
+ #e{
+     margin-left: 50%;
+ } */
+ #Z{
+     font-size: 30px;
+     margin-left: 8%;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: white;
+ }
